@@ -19,21 +19,18 @@ void setup()
  pinMode (2, OUTPUT);
  pinMode (1, OUTPUT);
  pinMode (0, OUTPUT);
- //Serial.begin(115200);
 }
 
 void loop()
 { 
- //Serial.print("hello\n");
  int buttonStateb = digitalRead(buttonB);
  int buttonStatef = digitalRead(buttonF);
 
- 
  if ((buttonStateb == LOW) && (buttonStatef == LOW))
  {
   digitalWrite(2, HIGH);
-  digitalWrite(1, LOW);
-  digitalWrite(0, LOW);
+  digitalWrite(1, HIGH);
+  digitalWrite(0, HIGH);
   /*
   digitalWrite(DIR_F, LOW);
   digitalWrite(DIR_B, LOW);
@@ -71,6 +68,7 @@ void loop()
 
 
 }
+
 
 
 
